@@ -23,7 +23,7 @@ export default class VR extends React.Component {
         <Entity primitive="a-light" type="point" intensity="3" position="0 10 0"/>
         <Entity text={{value: 'Hello, A-Frame React!', align: 'center'}} position={{x: 0, y: 2, z: -1}}/>
         <Entity primitive="a-sky" height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"/>
-	<Spider/>
+	      <Spider />
       </Scene>
     );
   }
