@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
+import fears from './fearReducer'
 
 const rootReducer = combineReducers({
-  state: (state = {}) => state
+  fears
 });
 
 export default rootReducer;
