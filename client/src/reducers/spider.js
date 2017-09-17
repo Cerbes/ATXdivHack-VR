@@ -17,6 +17,11 @@ export const spider = {
 			setting: 'color',
 			type: 'select',
 			choices: ['black', 'red', 'brown']
+		},
+		{
+			setting: 'intensity',
+			type: 'select',
+			choices: ['low', 'moderate', 'extreme', 'average']
 		}
 	]
 }
