@@ -5,6 +5,7 @@
 - Chase Cloutier
 - [Stephen Mayeux](https://www.thebestjs.com)
 - [Karen Ding](https://linkedin.com/in/karen-ding)
+- Melissa Reeve
 
 ## Project Description
 VR tool for exposure therapy to help people overcome their fears.
@@ -20,7 +21,7 @@ VR tool for exposure therapy to help people overcome their fears.
 2. React and Redux for the views
 3. `react-router` for... routing.
 4. Webpack Dev server with CSS modules
-
+5. Node.js and Express to serve production build
 
 ## Running the React Client
 
@@ -29,4 +30,8 @@ VR tool for exposure therapy to help people overcome their fears.
 3. Install dependencies with `yarn` or `npm install`
 4. Start webpack dev server with `yarn start` or `npm start`
 5. Open browser and go to `localhost:8080`
-6. To view on your phone and Google Cardboard, ensure your computer and mobile device or on the same WiFi network. Then find your computer's IP address and go to `IP_ADDRESS:8080` to experience it yourself.
+6. To view on your phone and Google Cardboard, ensure your computer and mobile device or on the same WiFi network. Then find your computer's IP address and go to `IP_ADDRESS:8080` to experience it yourself. This only works on Android devices at the moment.
+
+# Production Build
+
+1. run `webpack` and `yarn server` and then go to `localhost:3030`
