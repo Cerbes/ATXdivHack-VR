@@ -15,16 +15,14 @@ import Setup from './components/Setup'
 
 import reducers from './reducers';
 
-let middleware = [thunk]
-
-if (process.env.NODE_ENV === 'development') {
-  middleware.push(logger)
-}
+let middleware = [thunk, logger]
 
 const createStoreWithMiddleware = applyMiddleware(...middleware)(createStore);
+const store = createStoreWithMiddleware(reducers,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 ReactDOM.render(
-  <Provider store={createStoreWithMiddleware(reducers)}>
+  <Provider store={store}>
     <Router history={browserHistory}>
       <Route path="/" component={AppContainer}>
         <IndexRoute component={VR} />
